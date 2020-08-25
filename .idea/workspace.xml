@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="" />
+    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/site/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +28,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -47,8 +53,16 @@
       <workItem from="1598298412252" duration="1268000" />
       <workItem from="1598300000753" duration="9000" />
       <workItem from="1598300204798" duration="1627000" />
-      <workItem from="1598351201391" duration="408000" />
+      <workItem from="1598351201391" duration="1751000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
+      <created>1598351889457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598351889457</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,10 +80,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="175" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1598291318138" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598351790354">
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598351885979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351790354" />
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351885979" />
     <state x="975" y="522" key="FileChooserDialogImpl" timestamp="1598301763494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -78,18 +92,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598299529636" />
-    <state x="829" y="418" key="Github.ShareDialog" timestamp="1598351453211">
+    <state x="829" y="418" key="Github.ShareDialog" timestamp="1598352335023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598351453211" />
+    <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598352335023" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1598301710675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598301710675" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598351600428">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598352076039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351600428" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598352076039" />
     <state x="92" y="92" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction" timestamp="1598301832908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
