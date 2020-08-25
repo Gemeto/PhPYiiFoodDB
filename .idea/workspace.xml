@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="2f30c6c0-d1e6-4de5-bc6c-470b9d229cd9" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1gXvOphxnkziMjnXsNiqKan4tIS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\User\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="" />
+      <created>1598273723085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598273723085</updated>
+      <workItem from="1598273724179" duration="621000" />
+      <workItem from="1598291228697" duration="372000" />
+      <workItem from="1598292995526" duration="1308000" />
+      <workItem from="1598296987761" duration="1057000" />
+      <workItem from="1598298412252" duration="1268000" />
+      <workItem from="1598300000753" duration="9000" />
+      <workItem from="1598300204798" duration="1627000" />
+      <workItem from="1598351201391" duration="408000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Primer commit desde PhpStorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer commit desde PhpStorm" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598291318138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1598291318138" />
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598351790354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351790354" />
+    <state x="975" y="522" key="FileChooserDialogImpl" timestamp="1598301763494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="975" y="522" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598301763494" />
+    <state x="784" y="440" key="Github.CreateGistDialog" timestamp="1598299529636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598299529636" />
+    <state x="829" y="418" key="Github.ShareDialog" timestamp="1598351453211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598351453211" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1598301710675">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598301710675" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598351600428">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351600428" />
+    <state x="92" y="92" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction" timestamp="1598301832908">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction/0.0.1920.1040@0.0.1920.1040" timestamp="1598301832908" />
+    <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1598301337453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1598301337453" />
+    <state x="784" y="294" key="svn4idea.import.options" timestamp="1598301330657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="294" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1598301330657" />
+  </component>
+</project>
