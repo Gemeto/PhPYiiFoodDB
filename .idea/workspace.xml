@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="Segundo commit desde PhpStorm, test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/models/ContactForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/tests/functional/SiteTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/tests/functional/SiteTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/site/contact.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/site/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +26,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="2f30c6c0-d1e6-4de5-bc6c-470b9d229cd9" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="ae4e603e-f79c-40d5-b86b-6fc828b05eb5" name="Server" />
+    </servers>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1gXvOphxnkziMjnXsNiqKan4tIS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,6 +46,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Web" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Server" start_url="/phpyiitesting">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Server" start_url="/phpyiitesting">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -53,7 +73,9 @@
       <workItem from="1598298412252" duration="1268000" />
       <workItem from="1598300000753" duration="9000" />
       <workItem from="1598300204798" duration="1627000" />
-      <workItem from="1598351201391" duration="1751000" />
+      <workItem from="1598351201391" duration="2602000" />
+      <workItem from="1598358861351" duration="686000" />
+      <workItem from="1598379979858" duration="10897000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -62,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598351889457</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Segundo commit desde PhpStorm, test">
+      <created>1598356896426</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598356896426</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,17 +102,38 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Primer commit desde PhpStorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer commit desde PhpStorm" />
+    <MESSAGE value="Segundo commit desde PhpStorm, test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit desde PhpStorm, test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598291318138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="175" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1598291318138" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598351885979">
+    <state x="711" y="344" key="#Notifications" timestamp="1598356859586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598351885979" />
+    <state x="711" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1598356859586" />
+    <state x="540" y="175" key="#Servers" timestamp="1598392346782">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1598392346782" />
+    <state x="414" y="175" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598392396798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598392396798" />
+    <state x="731" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598380710005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598380710005" />
+    <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598380447429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598388387629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598388387629" />
     <state x="975" y="522" key="FileChooserDialogImpl" timestamp="1598301763494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -96,14 +146,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598352335023" />
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1598392564291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564291" />
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1598392564291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564291" />
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1598392564291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564291" />
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1598392564291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564291" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1598392568832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598392568832" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1598392568832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598392568832" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1598392568832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598392568832" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1598392568832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598392568832" />
+    <state width="938" height="348" key="GridCell.Tab.2.bottom" timestamp="1598392564098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564098" />
+    <state width="938" height="348" key="GridCell.Tab.2.center" timestamp="1598392564098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564098" />
+    <state width="938" height="348" key="GridCell.Tab.2.left" timestamp="1598392564098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564098" />
+    <state width="938" height="348" key="GridCell.Tab.2.right" timestamp="1598392564098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598392564098" />
+    <state x="733" y="243" key="NewPhpClassDialog" timestamp="1598384506474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598384506474" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1598301710675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598301710675" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598352076039">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598356965155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598352076039" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598356965155" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598357069889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598357069889" />
     <state x="92" y="92" width="1736" height="856" key="git4idea.log.GitShowExternalLogAction" timestamp="1598301832908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -116,5 +222,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="294" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1598301330657" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/IngestController.php</url>
+          <line>73</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
