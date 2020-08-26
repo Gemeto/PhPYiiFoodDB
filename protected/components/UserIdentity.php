@@ -20,10 +20,12 @@ class UserIdentity extends CUserIdentity
 	{
 		$usrs=User::model()->findAll();
 		$user = null;
+
 		foreach($usrs as $usr){
             if($usr->email == $this->username)
                 $user = $usr;
         }
+
 		if(!isset($user))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		elseif($user->password!==$this->password)

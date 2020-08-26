@@ -2,59 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/17c38b85/pager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/detailview/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/down.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/jquery.yiigridview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/up.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/update.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/gridview/view.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/listview/down.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/listview/jquery.yiilistview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/listview/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/listview/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/189993a2/listview/up.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/controllers/FoodController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/controllers/IngestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/models/Food.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/models/Ingest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.22/CrudCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.22/ModelCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/food/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/user/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/components/UserIdentity.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/components/UserIdentity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/controllers/IngestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/IngestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/user/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/user/_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +76,8 @@
       <workItem from="1598351201391" duration="2602000" />
       <workItem from="1598358861351" duration="686000" />
       <workItem from="1598379979858" duration="11101000" />
-      <workItem from="1598430701971" duration="3026000" />
+      <workItem from="1598430701971" duration="3367000" />
+      <workItem from="1598459679950" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -145,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598392863196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Añadida la tabla User a la BD, donde se guardan los nuevos registros y donde se cotejan los datos para el login.&#10;&#10;Tambien se ha añadido el enlace entre ingestas y usuarios.">
+      <created>1598434027060</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598434027060</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +121,8 @@
     <MESSAGE value="Primer commit desde PhpStorm" />
     <MESSAGE value="Segundo commit desde PhpStorm, test" />
     <MESSAGE value="Añadida pestaña ingesta para usuarios autenticados.&#10;&#10;Ahora consta de una BD de Alimentos e Ingestas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadida pestaña ingesta para usuarios autenticados.&#10;&#10;Ahora consta de una BD de Alimentos e Ingestas." />
+    <MESSAGE value="Añadida la tabla User a la BD, donde se guardan los nuevos registros y donde se cotejan los datos para el login.&#10;&#10;Tambien se ha añadido el enlace entre ingestas y usuarios." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadida la tabla User a la BD, donde se guardan los nuevos registros y donde se cotejan los datos para el login.&#10;&#10;Tambien se ha añadido el enlace entre ingestas y usuarios." />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598291318138">
@@ -186,10 +149,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598392860349">
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1598434023543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598392860349" />
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598434023543" />
     <state x="975" y="522" key="FileChooserDialogImpl" timestamp="1598301763494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,54 +165,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598352335023" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1598433508280">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1598461690681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598433508280" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1598433508280">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690681" />
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1598461690681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598433508279" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1598433508279">
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690681" />
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1598461690681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598433508279" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1598433508280">
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690681" />
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1598461690681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598433508280" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1598433519469">
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690681" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1598461696517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598433519469" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1598433519469">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598461696517" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1598461696517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598433519469" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1598433519469">
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598461696517" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1598461696517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598433519469" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1598433519469">
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598461696517" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1598461696517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598433519469" />
-    <state width="938" height="348" key="GridCell.Tab.2.bottom" timestamp="1598392906608">
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598461696517" />
+    <state width="938" height="348" key="GridCell.Tab.2.bottom" timestamp="1598461690504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598392906608" />
-    <state width="938" height="348" key="GridCell.Tab.2.center" timestamp="1598392906608">
+    <state width="938" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690504" />
+    <state width="938" height="348" key="GridCell.Tab.2.center" timestamp="1598461690504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598392906608" />
-    <state width="938" height="348" key="GridCell.Tab.2.left" timestamp="1598392906608">
+    <state width="938" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690504" />
+    <state width="938" height="348" key="GridCell.Tab.2.left" timestamp="1598461690504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598392906608" />
-    <state width="938" height="348" key="GridCell.Tab.2.right" timestamp="1598392906608">
+    <state width="938" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690504" />
+    <state width="938" height="348" key="GridCell.Tab.2.right" timestamp="1598461690504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598392906608" />
+    <state width="938" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598461690504" />
     <state x="733" y="243" key="NewPhpClassDialog" timestamp="1598384506474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -258,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598301710675" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598392865375">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598434029596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598392865375" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598434029596" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598357069889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,6 +243,15 @@
     <state x="784" y="294" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1598301330657" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/UserController.php</url>
+          <line>72</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
         <watch expression="$user-&gt;id" language="PHP" />

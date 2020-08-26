@@ -27,9 +27,15 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->textArea($model,'password',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->passwordField($model,'password',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'password_repeat'); ?>
+        <?php echo $form->passwordField($model,'password_repeat',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->error($model,'password_repeat'); ?>
+    </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
