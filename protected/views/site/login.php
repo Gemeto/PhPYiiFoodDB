@@ -37,6 +37,7 @@ $this->breadcrumbs=array(
 		<p class="hint">
 			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
 		</p>
+        <a href="?r=user/create">Register</a>
 	</div>
 
 	<div class="row rememberMe">
