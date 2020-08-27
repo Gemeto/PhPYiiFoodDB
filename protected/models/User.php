@@ -10,7 +10,7 @@
  */
 class User extends CActiveRecord
 {
-    public $password_repeat;
+    public ?string $password_repeat = null;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -27,7 +27,7 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email, password', 'required'),
+			array('email, password, password_repeat', 'required'),
             array('password', 'compare', 'compareAttribute' => 'password_repeat'),
             // The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

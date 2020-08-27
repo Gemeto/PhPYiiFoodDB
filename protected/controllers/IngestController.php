@@ -73,7 +73,6 @@ class IngestController extends Controller
             $criteria = new CDbCriteria;
             $criteria->condition = 'Nombre={$model->food}';
             $food = Food::model()->findAll($criteria);
-            $model->user_id = Yii::app()->user->getId();
             if (isset($food[0])) {
                 $model->food_id = $food[0]->id;
                 if ($model->save())
