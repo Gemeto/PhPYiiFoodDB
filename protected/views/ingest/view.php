@@ -1,6 +1,8 @@
 <?php
 /* @var $this IngestController */
 /* @var $model Ingest */
+/* @var $comment Comment */
+/* @var $comments */
 
 $this->breadcrumbs=array(
 	'Ingests'=>array('index'),
@@ -16,7 +18,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Ingest #<?php echo $model->id; ?></h1>
+<h1>Comida<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -26,4 +28,20 @@ $this->menu=array(
 		'food_id',
 		'hora',
 	),
+)); ?>
+
+<?php
+$comments = Comment::listFromIngest($model->id);
+foreach($comments as $c){
+    $this->renderPartial('_comment', array(
+        'ingest' => $model,
+        'data' => $c,
+        'answer' => $comment,
+    ));
+}
+
+if(!Yii::app()->User->isGuest)
+    $comment->ingest_id = $model->id;
+$this->renderPartial('/comment/_form',array(
+    'model'=>$comment,
 )); ?>

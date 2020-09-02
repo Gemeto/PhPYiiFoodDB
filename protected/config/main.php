@@ -55,10 +55,10 @@ return array(
 		*/
 
         'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=AlimentappDB',
+            'connectionString' => 'mysql:host=localhost;dbname=AlimentaDB',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '',
+            'password' => 'mysq13',
             'charset' => 'utf8',
             'tablePrefix' => 'tbl_',
         ),

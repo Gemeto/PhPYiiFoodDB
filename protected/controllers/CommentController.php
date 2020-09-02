@@ -1,6 +1,6 @@
 <?php
 
-class IngestController extends Controller
+class CommentController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -51,16 +51,9 @@ class IngestController extends Controller
 	 */
 	public function actionView($id)
 	{
-	    $comment=new Comment;
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-            'comment'=>$comment,
 		));
-
-		if(isset($_POST['Comment'])) {
-            $comment->attributes = $_POST['Comment'];
-            $comment->save();
-        }
 	}
 
 	/**
@@ -69,23 +62,17 @@ class IngestController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Ingest;
+		$model=new Comment;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Ingest'])) {
-            $model->attributes = $_POST['Ingest'];
-            $model->food = Food::listAll()[$model->food];
-            $criteria = new CDbCriteria;
-            $criteria->condition = "Nombre='{$model->food}'";
-            $food = Food::model()->findAll($criteria);
-            if (isset($food[0])) {
-                $model->food_id = $food[0]->id;
-                if ($model->save())
-                    $this->redirect(array('view', 'id' => $model->id));
-            }
-        }
+		if(isset($_POST['Comment']))
+		{
+			$model->attributes=$_POST['Comment'];
+			if ($model->save())
+                $this->redirect(array('view', 'id' => $model->id));
+		}
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -104,9 +91,9 @@ class IngestController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Ingest']))
+		if(isset($_POST['Comment']))
 		{
-			$model->attributes=$_POST['Ingest'];
+			$model->attributes=$_POST['Comment'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -135,7 +122,7 @@ class IngestController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Ingest');
+		$dataProvider=new CActiveDataProvider('Comment');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -146,10 +133,10 @@ class IngestController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Ingest('search');
+		$model=new Comment('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Ingest']))
-			$model->attributes=$_GET['Ingest'];
+		if(isset($_GET['Comment']))
+			$model->attributes=$_GET['Comment'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -160,12 +147,12 @@ class IngestController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Ingest the loaded model
+	 * @return Comment the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Ingest::model()->findByPk($id);
+		$model=Comment::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -173,11 +160,11 @@ class IngestController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Ingest $model the model to be validated
+	 * @param Comment $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='ingest-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='comment-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

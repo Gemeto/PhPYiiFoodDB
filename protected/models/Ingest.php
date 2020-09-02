@@ -10,6 +10,7 @@
  * @property integer $user_id
  * @property integer $hora
  */
+define('a','b');
 class Ingest extends CActiveRecord
 {
 	/**
