@@ -18,14 +18,14 @@ $this->menu=array(
 );
 ?>
 
-<h1>Comida<?php echo $model->id; ?></h1>
+<h1>Comida <?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
 		'food',
-		'food_id',
+		'unidades',
 		'hora',
 	),
 )); ?>

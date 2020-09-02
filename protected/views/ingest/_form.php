@@ -25,6 +25,12 @@
         <?php echo $form->error($model,'food'); ?>
     </div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'unidades'); ?>
+        <?php echo $form->textField($model,'unidades'); ?>
+        <?php echo $form->error($model,'unidades'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'hora'); ?>
 		<?php echo $form->textField($model,'hora'); ?>

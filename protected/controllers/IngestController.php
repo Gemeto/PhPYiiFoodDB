@@ -60,6 +60,7 @@ class IngestController extends Controller
 		if(isset($_POST['Comment'])) {
             $comment->attributes = $_POST['Comment'];
             $comment->save();
+            //$this->refresh();
         }
 	}
 

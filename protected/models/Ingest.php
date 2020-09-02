@@ -9,6 +9,7 @@
  * @property integer $food_id
  * @property integer $user_id
  * @property integer $hora
+ * @property integer $cantidad
  */
 define('a','b');
 class Ingest extends CActiveRecord
@@ -29,8 +30,8 @@ class Ingest extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('food, hora', 'required'),
-			array('food_id, hora', 'numerical', 'integerOnly'=>true),
+			array('food, unidades, hora', 'required'),
+			array('food_id, unidades, hora', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, food, food_id, hora, user_id', 'safe', 'on'=>'search'),
@@ -61,6 +62,7 @@ class Ingest extends CActiveRecord
 			'food_id' => 'Food',
             'user_id' => 'User',
             'hora' => 'Hora',
+            'unidades' => 'Unidades'
 		);
 	}
 

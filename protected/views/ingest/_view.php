@@ -17,6 +17,10 @@
 	<?php echo CHtml::encode($data->food_id); ?>
 	<br />
 
+    <b><?php echo CHtml::encode($data->getAttributeLabel('unidades')); ?>:</b>
+    <?php echo CHtml::encode($data->hora); ?>
+    <br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('hora')); ?>:</b>
 	<?php echo CHtml::encode($data->hora); ?>
 	<br />
