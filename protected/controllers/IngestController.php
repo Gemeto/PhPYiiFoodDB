@@ -28,11 +28,11 @@ class IngestController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'shared2me', 'index'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -52,10 +52,25 @@ class IngestController extends Controller
 	public function actionView($id)
 	{
 	    $comment=new Comment;
+	    $shareingest=new Sharedingest;
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
             'comment'=>$comment,
+            'singest'=>$shareingest,
 		));
+
+        if(isset($_POST['Sharedingest'])) {
+            $shareingest->attributes = $_POST['Sharedingest'];
+            $email = User::listAll()[$shareingest->user_id];
+            $criteria = new CDbCriteria;
+            $criteria->condition = "email='{$email}'";
+            $user = User::model()->findAll($criteria);
+            if (isset($user[0])) {
+                $shareingest->user_id = $user[0]->id;
+                $shareingest->save();
+            }
+            //$this->refresh();
+        }
 
 		if(isset($_POST['Comment'])) {
             $comment->attributes = $_POST['Comment'];
@@ -136,11 +151,25 @@ class IngestController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Ingest');
+	    $usr_id = Yii::app()->user->id;
+	    $criteria = new CDbCriteria;
+        $criteria->condition = "user_id = '{$usr_id}'";
+		$dataProvider=new CArrayDataProvider(Ingest::model()->findAll($criteria));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+    public function actionShared2Me()
+    {
+        $usr_id = Yii::app()->user->id;
+        $criteria = new CDbCriteria;
+        $criteria->condition = "id IN(SELECT ingest_id FROM sharedingest WHERE user_id = {$usr_id})";
+        $dataProvider=new CArrayDataProvider(Ingest::model()->findAll($criteria));
+        $this->render('index',array(
+            'dataProvider'=>$dataProvider,
+        ));
+    }
 
 	/**
 	 * Manages all models.

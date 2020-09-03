@@ -19,6 +19,16 @@ class User extends CActiveRecord
 		return 'user';
 	}
 
+    //Returns a list of all Users
+    static function listAll(){
+        $users=User::model()->findAll();
+        $list = array();
+        foreach ($users as $u){
+            array_push($list, $u->email);
+        }
+        return $list;
+    }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

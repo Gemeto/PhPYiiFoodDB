@@ -1,25 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "ingest".
+ * This is the model class for table "sharedingest".
  *
- * The followings are the available columns in table 'ingest':
- * @property integer $id
- * @property string $food
- * @property integer $food_id
+ * The followings are the available columns in table 'sharedingest':
  * @property integer $user_id
- * @property integer $hora
- * @property integer $cantidad
+ * @property integer $ingest_id
  */
-define('a','b');
-class Ingest extends CActiveRecord
+class Sharedingest extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'ingest';
+		return 'sharedingest';
 	}
 
 	/**
@@ -30,11 +25,11 @@ class Ingest extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('food, unidades, hora, user_id', 'required'),
-			array('food_id, user_id, unidades, hora', 'numerical', 'integerOnly'=>true),
+			array('user_id, ingest_id', 'required'),
+			array('user_id, ingest_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, food, food_id, hora, user_id', 'safe', 'on'=>'search'),
+			array('user_id, ingest_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,9 +41,7 @@ class Ingest extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-            'user_id'=>array(self::BELONGS_TO, 'User', 'id'),
-            'food_id'=>array(self::BELONGS_TO, 'Food', 'id'),
-        );
+		);
 	}
 
 	/**
@@ -57,12 +50,8 @@ class Ingest extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'food' => 'Food',
-			'food_id' => 'Food',
-            'user_id' => 'User',
-            'hora' => 'Hora',
-            'unidades' => 'Unidades'
+			'user_id' => 'User',
+			'ingest_id' => 'Ingest',
 		);
 	}
 
@@ -84,11 +73,8 @@ class Ingest extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('food',$this->food,true);
-		$criteria->compare('food_id',$this->food_id);
-        $criteria->compare('user_id',$this->user_id);
-        $criteria->compare('hora',$this->hora);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('ingest_id',$this->ingest_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -99,7 +85,7 @@ class Ingest extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Ingest the static model class
+	 * @return Sharedingest the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

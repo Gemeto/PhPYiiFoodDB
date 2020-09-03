@@ -2,6 +2,7 @@
 /* @var $this IngestController */
 /* @var $model Ingest */
 /* @var $comment Comment */
+/* @var $singest Sharedingest */
 /* @var $comments */
 
 $this->breadcrumbs=array(
@@ -44,4 +45,12 @@ if(!Yii::app()->User->isGuest)
     $comment->ingest_id = $model->id;
 $this->renderPartial('/comment/_form',array(
     'model'=>$comment,
-)); ?>
+));
+
+if(Yii::app()->User->id == $model->user_id) {
+    $singest->ingest_id = $model->id;
+    $this->renderPartial('_share', array(
+        'model' => $singest,
+    ));
+}
+?>
