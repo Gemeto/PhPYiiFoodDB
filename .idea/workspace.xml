@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/FoodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/FoodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/IngestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/IngestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/comment/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/comment/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_share.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_share.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/ingest/shared2me.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/shared2me.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/ingest/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +154,8 @@
       <workItem from="1599118368586" duration="12621000" />
       <workItem from="1599142079330" duration="462000" />
       <workItem from="1599160078009" duration="7941000" />
-      <workItem from="1599171029471" duration="327000" />
+      <workItem from="1599171029471" duration="629000" />
+      <workItem from="1599173135612" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -241,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599134554247</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Solucionada la redireccion a la hora de añadir comentarios.">
+      <created>1599171645503</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599171645503</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +264,8 @@
     <MESSAGE value="Mejora de UI en cuanto a los comentarios anidados." />
     <MESSAGE value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas." />
     <MESSAGE value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;." />
+    <MESSAGE value="Solucionada la redireccion a la hora de añadir comentarios." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solucionada la redireccion a la hora de añadir comentarios." />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598661164062">
@@ -303,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1599134552278">
+    <state x="111" y="97" key="CommitChangelistDialog2" timestamp="1599171642946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599134552278" />
+    <state x="111" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599171642946" />
     <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1598661279720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -387,10 +388,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1599068004121" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599134578477">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599171647622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599134578477" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599171647622" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599124814300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

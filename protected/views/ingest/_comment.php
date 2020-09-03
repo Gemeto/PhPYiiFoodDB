@@ -18,7 +18,7 @@
         <input id="btnButton<?php echo $data->id ?>" type="button" value="Responder"/>
     </div>
 
-    <div id="respuesta<?php echo $data->id ?>" style="float:right">
+    <div id="respuesta<?php echo $data->id ?>">
     <?php
     $this->renderPartial('/comment/_form',array(
     'model'=>$answer,
