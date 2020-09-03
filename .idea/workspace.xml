@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/protected/models/Sharedingest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/_share.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protected/views/ingest/shared2me.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/controllers/FoodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/FoodController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/controllers/IngestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/IngestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Ingest.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Ingest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/comment/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/comment/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_share.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_share.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/ingest/shared2me.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/shared2me.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/views/ingest/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,6 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="2f30c6c0-d1e6-4de5-bc6c-470b9d229cd9" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="ae4e603e-f79c-40d5-b86b-6fc828b05eb5" name="Server" />
@@ -160,7 +159,10 @@
       <workItem from="1599049106455" duration="15940000" />
       <workItem from="1599079184714" duration="298000" />
       <workItem from="1599079875030" duration="436000" />
-      <workItem from="1599118368586" duration="12252000" />
+      <workItem from="1599118368586" duration="12621000" />
+      <workItem from="1599142079330" duration="462000" />
+      <workItem from="1599160078009" duration="7941000" />
+      <workItem from="1599171029471" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -225,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599124907445</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas.">
+      <created>1599134303081</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599134303081</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;.">
+      <created>1599134554247</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599134554247</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +262,9 @@
     <MESSAGE value="Añadidos los comentarios y comentarios anidados a las ingestas. !!Hay que mejorar la UI!" />
     <MESSAGE value="Añadido el campo unidades a las ingestas." />
     <MESSAGE value="Mejora de UI en cuanto a los comentarios anidados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejora de UI en cuanto a los comentarios anidados." />
+    <MESSAGE value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas." />
+    <MESSAGE value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;." />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598661164062">
@@ -285,10 +303,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1599124905309">
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1599134552278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599124905309" />
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599134552278" />
     <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1598661279720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -309,54 +327,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598352335023" />
-    <state width="456" height="347" key="GridCell.Tab.0.bottom" timestamp="1599131874588">
+    <state width="938" height="347" key="GridCell.Tab.0.bottom" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599131874588" />
-    <state width="456" height="347" key="GridCell.Tab.0.center" timestamp="1599131874588">
+    <state width="938" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.0.center" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599131874588" />
-    <state width="456" height="347" key="GridCell.Tab.0.left" timestamp="1599131874587">
+    <state width="938" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.0.left" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599131874587" />
-    <state width="456" height="347" key="GridCell.Tab.0.right" timestamp="1599131874588">
+    <state width="938" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.0.right" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599131874588" />
-    <state width="456" height="347" key="GridCell.Tab.1.bottom" timestamp="1599131878311">
+    <state width="938" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.1.bottom" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599131878311" />
-    <state width="456" height="347" key="GridCell.Tab.1.center" timestamp="1599131878311">
+    <state width="938" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.1.center" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599131878311" />
-    <state width="456" height="347" key="GridCell.Tab.1.left" timestamp="1599131878310">
+    <state width="938" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.1.left" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599131878310" />
-    <state width="456" height="347" key="GridCell.Tab.1.right" timestamp="1599131878311">
+    <state width="938" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.1.right" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="456" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599131878311" />
-    <state width="938" height="348" key="GridCell.Tab.2.bottom" timestamp="1599078973809">
+    <state width="938" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.2.bottom" timestamp="1599134589152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599078973809" />
-    <state width="938" height="348" key="GridCell.Tab.2.center" timestamp="1599078973808">
+    <state width="938" height="347" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589152" />
+    <state width="938" height="347" key="GridCell.Tab.2.center" timestamp="1599134589152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599078973808" />
-    <state width="938" height="348" key="GridCell.Tab.2.left" timestamp="1599078973808">
+    <state width="938" height="347" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589152" />
+    <state width="938" height="347" key="GridCell.Tab.2.left" timestamp="1599134589151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599078973808" />
-    <state width="938" height="348" key="GridCell.Tab.2.right" timestamp="1599078973808">
+    <state width="938" height="347" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589151" />
+    <state width="938" height="347" key="GridCell.Tab.2.right" timestamp="1599134589152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599078973808" />
+    <state width="938" height="347" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599134589152" />
     <state x="733" y="243" key="NewPhpClassDialog" timestamp="1599131138991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -369,10 +387,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1599068004121" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599125157703">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599134578477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599125157703" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599134578477" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599124814300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

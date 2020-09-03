@@ -4,6 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
+<div class="view">
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -34,3 +35,4 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+</div><!-- view -->

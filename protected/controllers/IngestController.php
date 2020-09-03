@@ -69,13 +69,18 @@ class IngestController extends Controller
                 $shareingest->user_id = $user[0]->id;
                 $shareingest->save();
             }
-            //$this->refresh();
         }
 
 		if(isset($_POST['Comment'])) {
             $comment->attributes = $_POST['Comment'];
             $comment->save();
-            //$this->refresh(); //Al refrescar intenta meter de nuevo la entrada en la BD!!!!!MAL!!
+            $URL = "http://localhost/phpyiitesting/index.php?r=ingest/view&id={$id}";//Hacer un url relativo
+            if( headers_sent() ) {
+                echo("<script>location.href='$URL'</script>");
+            }
+            else {
+                header("Location: $URL");
+            }
         }
 	}
 

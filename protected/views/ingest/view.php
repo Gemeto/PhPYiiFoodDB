@@ -18,10 +18,9 @@ $this->menu=array(
 	array('label'=>'Manage Ingest', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Comida <?php echo $model->id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
+<h1>Ingesta <?php echo $model->id; ?></h1>
+<?php
+$this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
@@ -29,7 +28,8 @@ $this->menu=array(
 		'unidades',
 		'hora',
 	),
-)); ?>
+));
+?>
 
 <?php
 $comments = Comment::listFromIngest($model->id);
@@ -40,13 +40,16 @@ foreach($comments as $c){
         'answer' => $comment,
     ));
 }
-
+?>
+<?php
 if(!Yii::app()->User->isGuest)
     $comment->ingest_id = $model->id;
 $this->renderPartial('/comment/_form',array(
     'model'=>$comment,
 ));
-
+?>
+<h2>Compartir con...</h2>
+<?php
 if(Yii::app()->User->id == $model->user_id) {
     $singest->ingest_id = $model->id;
     $this->renderPartial('_share', array(
