@@ -75,7 +75,7 @@ class IngestController extends Controller
 		if(isset($_POST['Comment'])) {
             $comment->attributes = $_POST['Comment'];
             $comment->save();
-            //$this->refresh();
+            //$this->refresh(); //Al refrescar intenta meter de nuevo la entrada en la BD!!!!!MAL!!
         }
 	}
 

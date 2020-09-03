@@ -4163,3 +4163,25 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/phpyiitesting/index.php?r=ingest/shared2me
 ---
+2020/09/03 14:00:58 [error] [php] Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\yii\framework\web\CController.php:796) (E:\xampp\htdocs\yii\framework\web\CHttpRequest.php:890)
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(1046): IngestController->redirect()
+#1 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(78): IngestController->refresh()
+#2 unknown(0): IngestController->actionView()
+#3 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#4 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): IngestController->runAction()
+#7 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): IngestController->filterAccessControl()
+#10 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\xampp\htdocs\yii\framework\web\CController.php(265): IngestController->runActionWithFilters()
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): IngestController->run()
+#14 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CWebApplication->run()
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/view&id=3
+in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (78)
+in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
