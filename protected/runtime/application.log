@@ -3556,3 +3556,6 @@ HTTP_REFERER=http://localhost/phpyiitesting/index.php
 2020/09/02 22:56:25 [warning] [application] Failed to set unsafe attribute "user_id" of "Ingest".
 in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (79)
 in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
+2020/09/03 10:15:38 [warning] [application] Failed to set unsafe attribute "user_id" of "Ingest".
+in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (79)
+in E:\xampp\htdocs\PhPYiiTesting\index.php (13)

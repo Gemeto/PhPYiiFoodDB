@@ -19,7 +19,7 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="row" id="commentary">
 		<?php echo $form->labelEx($model,'commentary'); ?>
 		<?php echo $form->textArea($model,'commentary',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'commentary'); ?>

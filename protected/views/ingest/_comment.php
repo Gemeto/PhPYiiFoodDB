@@ -14,33 +14,18 @@
     <?php echo CHtml::encode($data->date); ?>
     <br />
 
-    <script type="text/javascript">
-        window.onload = function(){
-            for (let el of document.querySelectorAll('.respuesta')) el.style.visibility = 'hidden';
-            for (let el of document.querySelectorAll('.btnButton2')) el.style.visibility = 'hidden';
-
-            for (let el of document.querySelectorAll('.btnButton')) el.onclick = function() {
-                for (let el of document.querySelectorAll('.respuesta')) el.style.visibility = 'visible';
-                for (let el of document.querySelectorAll('.btnButton')) el.style.visibility = 'hidden';
-                for (let el of document.querySelectorAll('.btnButton2')) el.style.visibility = 'visible';
-            };
-            for (let el of document.querySelectorAll('.btnButton2')) el.onclick = function () {
-                for (let el of document.querySelectorAll('.respuesta')) el.style.visibility = 'hidden';
-                for (let el of document.querySelectorAll('.btnButton')) el.style.visibility = 'visible';
-                for (let el of document.querySelectorAll('.btnButton2')) el.style.visibility = 'hidden';
-            };
-        };
-    </script>
     <div>
-        <input class="btnButton" type="button" value="Responder"/>
+        <input id="btnButton<?php echo $data->id ?>" type="button" value="Responder"/>
     </div>
-    <div class="respuesta" style="float:left">
+
+    <div id="respuesta<?php echo $data->id ?>" style="float:right">
     <?php
     $this->renderPartial('/comment/_form',array(
     'model'=>$answer,
     'original_id'=>$data->id,
     )); ?>
     </div>
+
     <div>
     <?php
     $comments = Comment::listFromOriginComment($data->id);
@@ -52,6 +37,23 @@
     }
     ?>
     </div>
-    <input class="btnButton2" type="button" value="Cerrar"/>
+
+    <input id="btnButton2<?php echo $data->id ?>" type="button" value="Cerrar"/>
+
+    <script type="text/javascript">
+        document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
+        document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "none";
+
+        document.getElementById("btnButton<?php echo $data->id ?>").onclick = function() {
+            document.getElementById("respuesta<?php echo $data->id ?>").style.display = "initial";
+            document.getElementById("btnButton<?php echo $data->id ?>").style.display = "none";
+            document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "initial";
+        };
+        document.getElementById("btnButton2<?php echo $data->id ?>").onclick = function () {
+            document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
+            document.getElementById("btnButton<?php echo $data->id ?>").style.display = "initial";
+            document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "none";
+        };
+    </script>
 
 </div>

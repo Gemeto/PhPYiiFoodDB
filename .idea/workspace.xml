@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="Añadidos los comentarios y comentarios anidados a las ingestas. !!Hay que mejorar la UI!">
+    <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/IngestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/IngestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Ingest.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Ingest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/comment/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/comment/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/ingest/_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_comment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,8 @@
       <workItem from="1598719506295" duration="465000" />
       <workItem from="1599049106455" duration="15940000" />
       <workItem from="1599079184714" duration="298000" />
-      <workItem from="1599079875030" duration="306000" />
+      <workItem from="1599079875030" duration="436000" />
+      <workItem from="1599118368586" duration="5866000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599079342618</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Añadido el campo unidades a las ingestas.">
+      <created>1599080299491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599080299491</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +232,8 @@
     <MESSAGE value="Pequeña mejora en el código de creacion de comida e ingesta." />
     <MESSAGE value="Pequeña mejora en el código del controlador de creacion de comida e ingesta." />
     <MESSAGE value="Añadidos los comentarios y comentarios anidados a las ingestas. !!Hay que mejorar la UI!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadidos los comentarios y comentarios anidados a las ingestas. !!Hay que mejorar la UI!" />
+    <MESSAGE value="Añadido el campo unidades a las ingestas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido el campo unidades a las ingestas." />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598661164062">
@@ -264,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
-    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1599079361871">
+    <state x="578" y="97" key="CommitChangelistDialog2" timestamp="1599080297399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599079361871" />
+    <state x="578" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599080297399" />
     <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1598661279720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -344,10 +352,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1599068004121" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599079366552">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599080302179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599079366552" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599080302179" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598357069889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
