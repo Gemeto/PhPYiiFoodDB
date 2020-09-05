@@ -4931,3 +4931,37 @@ Stack trace:
 REQUEST_URI=/phpyiitesting/index.php?r=ingest/view&id=6
 in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (79)
 in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
+2020/09/05 17:58:30 [error] [exception.Error] Error: Object of class Comment could not be converted to string in E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_comment.php:44
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#3 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_comment.php(35): CController->renderPartial('_comment', Array)
+#4 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#6 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\view.php(40): CController->renderPartial('_comment', Array)
+#8 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#12 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(59): CController->render('view', Array)
+#13 [internal function]: IngestController->actionView('7')
+#14 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(IngestController), Array)
+#15 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IngestController), Object(ReflectionMethod), Array)
+#16 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/view')
+#26 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/view&id=7
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=ingest/index
+---

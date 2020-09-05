@@ -2,6 +2,7 @@
 /* @var $this CommentController */
 /* @var $data Comment */
 /* @var $answer Comment */
+Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 
 <div class="view">
@@ -41,19 +42,20 @@
     <input id="btnButton2<?php echo $data->id ?>" type="button" value="Cerrar"/>
 
     <script type="text/javascript">
-        document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
-        document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "none";
+        $("#respuesta<?php echo $data->id ?>").hide();
+        //document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
+        $("#btnButton2<?php echo $data->id ?>").hide();
 
-        document.getElementById("btnButton<?php echo $data->id ?>").onclick = function() {
-            document.getElementById("respuesta<?php echo $data->id ?>").style.display = "initial";
-            document.getElementById("btnButton<?php echo $data->id ?>").style.display = "none";
-            document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "initial";
-        };
-        document.getElementById("btnButton2<?php echo $data->id ?>").onclick = function () {
-            document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
-            document.getElementById("btnButton<?php echo $data->id ?>").style.display = "initial";
-            document.getElementById("btnButton2<?php echo $data->id ?>").style.display = "none";
-        };
+        $("#btnButton<?php echo $data->id ?>").click(function() {
+            $("#respuesta<?php echo $data->id ?>").show();
+            $("#btnButton<?php echo $data->id ?>").hide();
+            $("#btnButton2<?php echo $data->id ?>").show();
+        });
+        $("#btnButton2<?php echo $data->id ?>").click(function() {
+            $("#respuesta<?php echo $data->id ?>").hide();
+            $("#btnButton<?php echo $data->id ?>").show();
+            $("#btnButton2<?php echo $data->id ?>").hide();
+        });
     </script>
 
 </div>
