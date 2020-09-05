@@ -39,23 +39,15 @@ Yii::app()->clientScript->registerCoreScript('jquery');
     ?>
     </div>
 
-    <input id="btnButton2<?php echo $data->id ?>" type="button" value="Cerrar"/>
-
     <script type="text/javascript">
         $("#respuesta<?php echo $data->id ?>").hide();
         //document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
-        $("#btnButton2<?php echo $data->id ?>").hide();
 
         $("#btnButton<?php echo $data->id ?>").click(function() {
-            $("#respuesta<?php echo $data->id ?>").show();
-            $("#btnButton<?php echo $data->id ?>").hide();
-            $("#btnButton2<?php echo $data->id ?>").show();
+            $("#respuesta<?php echo $data->id ?>").animate({height:'toggle'});
+            $("#btnButton<?php echo $data->id ?>").val($("#btnButton<?php echo $data->id ?>").val()=="Cerrar" ? "Responder" : "Cerrar");
         });
-        $("#btnButton2<?php echo $data->id ?>").click(function() {
-            $("#respuesta<?php echo $data->id ?>").hide();
-            $("#btnButton<?php echo $data->id ?>").show();
-            $("#btnButton2<?php echo $data->id ?>").hide();
-        });
+
     </script>
 
 </div>

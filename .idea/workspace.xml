@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a0cd94e-21ff-4412-9331-3356bcc479f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/views/ingest/_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/ingest/_comment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +158,8 @@
       <workItem from="1599171029471" duration="629000" />
       <workItem from="1599173135612" duration="619000" />
       <workItem from="1599173817347" duration="143000" />
-      <workItem from="1599320034239" duration="2855000" />
+      <workItem from="1599320034239" duration="3109000" />
+      <workItem from="1599338609146" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit desde PhpStorm">
       <created>1598351889457</created>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599173941371</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Los botonesnde los comentarios de la pagina de ingestas ahora usan jquery.">
+      <created>1599330832876</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599330832876</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +284,8 @@
     <MESSAGE value="Añadida la opción de compartir ingestas con otros usuarios para que estos puedan verlas y comentarlas, ademas de la pestaña en el menú principal de &quot;Ingestas compartidas contigo&quot;." />
     <MESSAGE value="Solucionada la redireccion a la hora de añadir comentarios." />
     <MESSAGE value="Layout de respuesta a comentarios cambiado." />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout de respuesta a comentarios cambiado." />
+    <MESSAGE value="Los botonesnde los comentarios de la pagina de ingestas ahora usan jquery." />
+    <option name="LAST_COMMIT_MESSAGE" value="Los botonesnde los comentarios de la pagina de ingestas ahora usan jquery." />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1598661164062">
@@ -316,9 +324,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="33" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380447429" />
-    <state x="111" y="97" key="CommitChangelistDialog2" timestamp="1599173939715">
+    <state x="111" y="97" key="CommitChangelistDialog2" timestamp="1599330830049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="111" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1280.0.1280.680@0.0.1920.1040" timestamp="1599330830049" />
     <state x="111" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599173939715" />
     <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1598661279720">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -420,6 +429,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599072892428" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1599338779231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/-1280.0.1280.680@0.0.1920.1040" timestamp="1599338779231" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1598301337453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
