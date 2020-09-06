@@ -41,8 +41,6 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 
     <script type="text/javascript">
         $("#respuesta<?php echo $data->id ?>").hide();
-        //document.getElementById("respuesta<?php echo $data->id ?>").style.display = "none";
-
         $("#btnButton<?php echo $data->id ?>").click(function() {
             $("#respuesta<?php echo $data->id ?>").animate({height:'toggle'});
             $("#btnButton<?php echo $data->id ?>").val($("#btnButton<?php echo $data->id ?>").val()=="Cerrar" ? "Responder" : "Cerrar");

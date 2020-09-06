@@ -27,6 +27,9 @@ $this->widget('zii.widgets.CDetailView', array(
 		'food',
 		'unidades',
 		'hora',
+        'kCal',
+        'grasas',
+        'hidratos'
 	),
 ));
 ?>

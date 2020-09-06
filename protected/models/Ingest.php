@@ -9,11 +9,14 @@
  * @property integer $food_id
  * @property integer $user_id
  * @property integer $hora
- * @property integer $cantidad
+ * @property integer $unidades
  */
-define('a','b');
 class Ingest extends CActiveRecord
 {
+    private Integer $_kCal;
+    private Integer $_hidratos;
+    private Integer $_grasas;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -31,7 +34,8 @@ class Ingest extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('food, unidades, hora, user_id', 'required'),
-			array('food_id, user_id, unidades, hora', 'numerical', 'integerOnly'=>true),
+			array('food_id, user_id, unidades', 'numerical', 'integerOnly'=>true),
+			array('hora', 'match', 'pattern'=>'/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/', 'message'=>'El formato de la hora debe ser "H:MM" o "HH:MM"'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, food, food_id, hora, user_id', 'safe', 'on'=>'search'),
@@ -105,4 +109,19 @@ class Ingest extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getkCal(){
+        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        return $this->unidades * $a[0]->kCal;
+    }
+
+    public function getHidratos(){
+        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        return $this->unidades * $a[0]->hidratos;
+    }
+
+    public function getGrasas(){
+        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        return $this->unidades * $a[0]->grasas;
+    }
 }
