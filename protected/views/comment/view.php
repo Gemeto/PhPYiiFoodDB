@@ -16,15 +16,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Comment #<?php echo $model->id; ?></h1>
+<h1>Comentario de <?php echo $model->user?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
-		'user_id',
+		'user',
 		'commentary',
 		'date',
-		'comment_answered_id',
 	),
 )); ?>

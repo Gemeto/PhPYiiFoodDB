@@ -28,7 +28,7 @@ class UserIdentity extends CUserIdentity
 
 		if(!isset($user))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($user->password!==$this->password)
+		elseif($user->password!==md5($this->password))
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else {
             $this->_id = $user->id+0;

@@ -1,33 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "user".
+ * This is the model class for table "voted_ingest".
  *
- * The followings are the available columns in table 'user':
- * @property integer $id
- * @property string $email
- * @property string $password
+ * The followings are the available columns in table 'voted_ingest':
+ * @property integer $user_id
+ * @property integer $ingest_id
  */
-class User extends CActiveRecord
+class VotedIngest extends CActiveRecord
 {
-    public ?string $password_repeat = null;
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'user';
+		return 'voted_ingest';
 	}
-
-    //Returns a list of all Users
-    static function listAll(){
-        $users=User::model()->findAll();
-        $list = array();
-        foreach ($users as $u){
-            array_push($list, $u->email);
-        }
-        return $list;
-    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -37,12 +25,11 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email, password, password_repeat', 'required'),
-            array('password', 'compare', 'compareAttribute' => 'password_repeat'),
-            array('email','email','message'=>'El email no es válido.'),
-            // The following rule is used by search().
+			array('user_id, ingest_id', 'required'),
+			array('user_id, ingest_id', 'numerical', 'integerOnly'=>true),
+			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email, password', 'safe', 'on'=>'search'),
+			array('user_id, ingest_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,9 +50,8 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'email' => 'Email',
-			'password' => 'Password',
+			'user_id' => 'User',
+			'ingest_id' => 'Ingest',
 		);
 	}
 
@@ -87,9 +73,8 @@ class User extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('password',$this->password,true);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('ingest_id',$this->ingest_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,7 +85,7 @@ class User extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return User the static model class
+	 * @return VotedIngest the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

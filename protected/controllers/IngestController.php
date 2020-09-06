@@ -28,7 +28,7 @@ class IngestController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('view'),
+				'actions'=>array('view', 'published'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -171,6 +171,14 @@ class IngestController extends Controller
         $criteria = new CDbCriteria;
         $criteria->condition = "id IN(SELECT ingest_id FROM sharedingest WHERE user_id = {$usr_id})";
         $dataProvider=new CArrayDataProvider(Ingest::model()->findAll($criteria));
+        $this->render('index',array(
+            'dataProvider'=>$dataProvider,
+        ));
+    }
+
+    public function actionPublished()
+    {
+        $dataProvider=new CArrayDataProvider(Ingest::model()->findAll("public = 1"));
         $this->render('index',array(
             'dataProvider'=>$dataProvider,
         ));
