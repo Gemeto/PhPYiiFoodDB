@@ -51,9 +51,9 @@ $this->renderPartial('/comment/_form',array(
     'model'=>$comment,
 ));
 ?>
-<h2>Compartir con...</h2>
 <?php
 if(Yii::app()->User->id == $model->user_id) {
+    echo "<h2>Compartir con...</h2>";
     $singest->ingest_id = $model->id;
     $this->renderPartial('_share', array(
         'model' => $singest,

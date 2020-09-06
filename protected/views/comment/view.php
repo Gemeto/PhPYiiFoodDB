@@ -16,12 +16,11 @@ $this->menu=array(
 );
 ?>
 
-<h1>Comentario de <?php echo $model->user?></h1>
+<h1>Comentario de <?php echo CHtml::encode(User::model()->findAll("id = {$model->user_id}")[0]->email)?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'user',
 		'commentary',
 		'date',
 	),

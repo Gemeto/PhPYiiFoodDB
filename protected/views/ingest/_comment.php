@@ -7,6 +7,9 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 
 <div class="view">
 
+    <?php echo CHtml::link(CHtml::encode(User::model()->findAll("id = {$data->user_id}")[0]->email), array('/comment/view', 'id'=>$data->id)); ?>
+    <br />
+
     <b><?php echo CHtml::encode($data->getAttributeLabel('commentary')); ?>:</b>
     <?php echo CHtml::encode($data->commentary); ?>
     <br />

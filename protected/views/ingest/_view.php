@@ -5,16 +5,12 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
+	<?php echo CHtml::link(CHtml::encode("Comida"), array('view', 'id'=>$data->id)); ?>
+    <b> de <?php echo User::model()->findAll("id = {$data->user_id}")[0]->email ?></b>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('food')); ?>:</b>
 	<?php echo CHtml::encode($data->food); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('food_id')); ?>:</b>
-	<?php echo CHtml::encode($data->food_id); ?>
 	<br />
 
     <b><?php echo CHtml::encode($data->getAttributeLabel('unidades')); ?>:</b>
