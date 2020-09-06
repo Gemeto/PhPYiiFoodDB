@@ -37,6 +37,12 @@
 		<?php echo $form->error($model,'hora'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'publicar comida'); ?>
+        <?php echo $form->checkBox($model,'public'); ?>
+        <?php echo $form->error($model,'estado'); ?>
+    </div>
+
     <?php echo $form->hiddenField($model,'user_id',array('value'=>Yii::app()->user->id)); ?>
 
     <div class="row buttons">

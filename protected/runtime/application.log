@@ -6029,3 +6029,185 @@ Stack trace:
 REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
 HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=ingest/published
 ---
+2020/09/06 21:41:06 [error] [exception.CException] CException: Property "Ingest.published" is not defined. in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('published')
+#1 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CActiveRecord->__get('published')
+#2 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1933): CHtml::resolveValue(Object(Ingest), 'published')
+#3 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(Ingest), 'published', Array)
+#4 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_form.php(42): CActiveForm->checkBox(Object(Ingest), 'published')
+#5 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#8 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\create.php(18): CController->renderPartial('_form', Array)
+#9 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#12 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#13 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(112): CController->render('create', Array)
+#14 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): IngestController->actionCreate()
+#15 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/create')
+#25 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=ingest/published
+---
+2020/09/06 21:42:03 [warning] [application] Failed to set unsafe attribute "public" of "Ingest".
+in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (99)
+in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
+2020/09/06 21:42:11 [warning] [application] Failed to set unsafe attribute "public" of "Ingest".
+in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (99)
+in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
+2020/09/06 21:42:25 [warning] [application] Failed to set unsafe attribute "public" of "Ingest".
+in E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php (99)
+in E:\xampp\htdocs\PhPYiiTesting\index.php (13)
+2020/09/06 21:44:28 [error] [exception.CException] CException: Property "CSafeValidator.0" is not defined. in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\validators\CValidator.php(177): CComponent->__set('0', 'published')
+#1 E:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Ingest), Array, Array)
+#2 E:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 E:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('food')
+#4 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1520): CModel->isAttributeRequired('food')
+#5 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(Ingest), 'food', Array)
+#6 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_form.php(23): CActiveForm->labelEx(Object(Ingest), 'food')
+#7 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#10 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\create.php(18): CController->renderPartial('_form', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#15 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(112): CController->render('create', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): IngestController->actionCreate()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/create')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=site/login
+---
+2020/09/06 21:44:46 [error] [exception.CException] CException: Property "CSafeValidator.0" is not defined. in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\validators\CValidator.php(177): CComponent->__set('0', 'published')
+#1 E:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Ingest), Array, Array)
+#2 E:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 E:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('food')
+#4 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1520): CModel->isAttributeRequired('food')
+#5 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(Ingest), 'food', Array)
+#6 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_form.php(23): CActiveForm->labelEx(Object(Ingest), 'food')
+#7 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#10 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\create.php(18): CController->renderPartial('_form', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#15 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(112): CController->render('create', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): IngestController->actionCreate()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/create')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=site/login
+---
+2020/09/06 21:44:54 [error] [exception.CException] CException: Property "CSafeValidator.0" is not defined. in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\validators\CValidator.php(177): CComponent->__set('0', 'published')
+#1 E:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Ingest), Array, Array)
+#2 E:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 E:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('food')
+#4 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1520): CModel->isAttributeRequired('food')
+#5 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(Ingest), 'food', Array)
+#6 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_form.php(23): CActiveForm->labelEx(Object(Ingest), 'food')
+#7 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#10 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\create.php(18): CController->renderPartial('_form', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#15 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(112): CController->render('create', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): IngestController->actionCreate()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/create')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=ingest/published
+---
+2020/09/06 21:45:21 [error] [exception.CException] CException: Property "CSafeValidator.0" is not defined. in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\validators\CValidator.php(177): CComponent->__set('0', 'public')
+#1 E:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Ingest), Array, Array)
+#2 E:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 E:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('food')
+#4 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1520): CModel->isAttributeRequired('food')
+#5 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(Ingest), 'food', Array)
+#6 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\_form.php(23): CActiveForm->labelEx(Object(Ingest), 'food')
+#7 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#10 E:\xampp\htdocs\PhPYiiTesting\protected\views\ingest\create.php(18): CController->renderPartial('_form', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#15 E:\xampp\htdocs\PhPYiiTesting\protected\controllers\IngestController.php(112): CController->render('create', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): IngestController->actionCreate()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ingest/create')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 E:\xampp\htdocs\PhPYiiTesting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/phpyiitesting/index.php?r=ingest/create
+HTTP_REFERER=http://localhost/phpyiitesting/index.php?r=ingest/published
+---

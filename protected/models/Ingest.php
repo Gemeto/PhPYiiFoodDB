@@ -33,12 +33,12 @@ class Ingest extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('food, unidades, hora, user_id', 'required'),
+			array('food, unidades, hora, user_id, public', 'required'),
 			array('food_id, user_id, unidades', 'numerical', 'integerOnly'=>true),
 			array('hora', 'match', 'pattern'=>'/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/', 'message'=>'El formato de la hora debe ser "H:MM" o "HH:MM"'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, food, food_id, hora, user_id', 'safe', 'on'=>'search'),
+			array('id, food, food_id, hora, user_id, public, unidades', 'safe', 'on'=>'search'),
 		);
 	}
 

@@ -31,7 +31,7 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Comida', 'url'=>array('/ingest/create'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Comidas públicas', 'url'=>array('/ingest/published'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Comidas públicas', 'url'=>array('/ingest/published')),
                 array('label'=>'Comidas compartidas contigo', 'url'=>array('/ingest/shared2me'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Register', 'url'=>array('/user/create'), 'visible'=>Yii::app()->user->isGuest),
