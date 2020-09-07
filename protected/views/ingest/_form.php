@@ -43,6 +43,12 @@
         <?php echo $form->error($model,'estado'); ?>
     </div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'usuario'); ?>
+        <?php echo $form->ListBox(new Sharedingest(),'user_id', User::listAll(), array('multiple' => 'multiple'), array('click' => "ListBoxClient_SelectionChanged(this, event);")) ?>
+        <?php echo $form->error($model,'usuario'); ?>
+    </div>
+
     <?php echo $form->hiddenField($model,'user_id',array('value'=>Yii::app()->user->id)); ?>
 
     <div class="row buttons">

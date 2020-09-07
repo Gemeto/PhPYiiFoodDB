@@ -18,7 +18,7 @@
     <?php echo $form->errorSummary($model); ?>
     <div class="row">
         <?php echo $form->labelEx($model,'usuario'); ?>
-        <?php echo $form->dropDownList($model, 'user_id', User::listAll());?>
+        <?php echo $form->ListBox($model,'user_id', User::listAll(), array('multiple' => 'multiple'), array('click' => "ListBoxClient_SelectionChanged(this, event);")) ?>
         <?php echo $form->error($model,'usuario'); ?>
     </div>
     <div class="row buttons">

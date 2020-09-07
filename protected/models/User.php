@@ -24,7 +24,7 @@ class User extends CActiveRecord
         $users=User::model()->findAll();
         $list = array();
         foreach ($users as $u){
-            array_push($list, $u->email);
+            array_push($list, array($u->id => $u->email));
         }
         return $list;
     }

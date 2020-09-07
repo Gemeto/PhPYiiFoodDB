@@ -60,13 +60,10 @@ class IngestController extends Controller
 		));
 
         if(isset($_POST['Sharedingest'])) {
-            $shareingest->attributes = $_POST['Sharedingest'];
-            $email = User::listAll()[$shareingest->user_id];
-            $criteria = new CDbCriteria;
-            $criteria->condition = "email='{$email}'";
-            $user = User::model()->findAll($criteria);
-            if (isset($user[0])) {
-                $shareingest->user_id = $user[0]->id;
+            foreach ($_POST['Sharedingest']['user_id'] as $uid) {
+                $shareingest = new Sharedingest();
+                $shareingest->ingest_id = $id;
+                $shareingest->user_id = $uid;
                 $shareingest->save();
             }
         }
@@ -103,8 +100,17 @@ class IngestController extends Controller
             $food = Food::model()->findAll($criteria);
             if (isset($food[0])) {
                 $model->food_id = $food[0]->id;
-                if ($model->save())
+                if ($model->save()) {
+                    if(isset($_POST['Sharedingest'])) {//Comprobamos si el usuario ha compartido la comida con alguien
+                        foreach ($_POST['Sharedingest']['user_id'] as $uid) {
+                            $shareingest = new Sharedingest();
+                            $shareingest->ingest_id = $model->id;
+                            $shareingest->user_id = $uid;
+                            $shareingest->save();
+                        }
+                    }
                     $this->redirect(array('view', 'id' => $model->id));
+                }
             }
         }
 
