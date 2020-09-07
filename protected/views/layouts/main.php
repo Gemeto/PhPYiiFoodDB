@@ -30,7 +30,8 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Comida', 'url'=>array('/ingest/create'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Alimentos', 'url'=>array('/food'), 'visible'=>Yii::app()->user->name == 'admin'),
+                array('label'=>'Comida', 'url'=>array('/ingest/create'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Comidas públicas', 'url'=>array('/ingest/published')),
                 array('label'=>'Comidas compartidas contigo', 'url'=>array('/ingest/shared2me'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
