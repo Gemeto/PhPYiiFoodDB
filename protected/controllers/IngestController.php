@@ -51,13 +51,7 @@ class IngestController extends Controller
 	 */
 	public function actionView($id)
 	{
-	    $comment=new Comment;
-	    $shareingest=new Sharedingest;
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-            'comment'=>$comment,
-            'singest'=>$shareingest,
-		));
+        $comment=new Comment;
 
         if(isset($_POST['Sharedingest'])) {
             foreach ($_POST['Sharedingest']['user_id'] as $uid) {
@@ -68,16 +62,23 @@ class IngestController extends Controller
             }
         }
 
-		if(isset($_POST['Comment'])) {
+        if(isset($_POST['Comment'])) {
             $comment->attributes = $_POST['Comment'];
+            $comment->ingest_id = $id;
             $comment->save();
-            $URL = "http://localhost/phpyiitesting/index.php?r=ingest/view&id={$id}";//Hacer un url relativo
-            if( headers_sent() ) {
-                echo("<script>location.href='$URL'</script>");
-            }
-            else {
-                header("Location: $URL");
-            }
+        }
+
+        $ingests = Ingest::model()->findAll("id='{$id}'");
+        if (isset($ingests[0])) {
+            $food = Food::model()->findAll("id='{$ingests[0]->food_id}'");
+            $foodN = isset($food[0]) ? $food[0]->Nombre : "No se ha podido encontrar la comida.";
+            $shareingest = new Sharedingest;
+            $this->render('view', array(
+                'model' => $this->loadModel($id),
+                'comment' => $comment,
+                'singest' => $shareingest,
+                'foodN' => $foodN,
+            ));
         }
 	}
 
@@ -94,23 +95,16 @@ class IngestController extends Controller
 
 		if(isset($_POST['Ingest'])) {
             $model->attributes = $_POST['Ingest'];
-            $model->food = Food::listAll()[$model->food];
-            $criteria = new CDbCriteria;
-            $criteria->condition = "Nombre='{$model->food}'";
-            $food = Food::model()->findAll($criteria);
-            if (isset($food[0])) {
-                $model->food_id = $food[0]->id;
-                if ($model->save()) {
-                    if(isset($_POST['Sharedingest'])) {//Comprobamos si el usuario ha compartido la comida con alguien
-                        foreach ($_POST['Sharedingest']['user_id'] as $uid) {
-                            $shareingest = new Sharedingest();
-                            $shareingest->ingest_id = $model->id;
-                            $shareingest->user_id = $uid;
-                            $shareingest->save();
-                        }
+            if ($model->save()) {
+                if(isset($_POST['Sharedingest'])) {//Comprobamos si el usuario ha compartido la comida con alguien
+                    foreach ($_POST['Sharedingest']['user_id'] as $uid) {
+                        $shareingest = new Sharedingest();
+                        $shareingest->ingest_id = $model->id;
+                        $shareingest->user_id = $uid;
+                        $shareingest->save();
                     }
-                    $this->redirect(array('view', 'id' => $model->id));
                 }
+                $this->redirect(array('view', 'id' => $model->id));
             }
         }
 

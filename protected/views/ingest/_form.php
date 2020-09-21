@@ -20,9 +20,12 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-        <?php echo $form->labelEx($model,'food'); ?>
-        <?php echo $form->dropDownList($model, 'food', Food::listAll());?>
-        <?php echo $form->error($model,'food'); ?>
+        <?php echo $form->labelEx($model,'food_id'); ?>
+        <?php
+        $foods = Food::model()->findAll();
+        $listFood=CHtml::listData($foods,'id','Nombre'); ?>
+        <?php echo $form->dropDownList($model, 'food_id', $listFood);?>
+        <?php echo $form->error($model,'food_id'); ?>
     </div>
 
     <div class="row">

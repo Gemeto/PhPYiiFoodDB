@@ -33,12 +33,12 @@ class Ingest extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('food, unidades, hora, user_id, public', 'required'),
+			array('unidades, hora, user_id, public', 'required'),
 			array('food_id, user_id, unidades', 'numerical', 'integerOnly'=>true),
 			array('hora', 'match', 'pattern'=>'/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/', 'message'=>'El formato de la hora debe ser "H:MM" o "HH:MM"'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, food, food_id, hora, user_id, public, unidades', 'safe', 'on'=>'search'),
+			array('id, food_id, hora, user_id, public, unidades', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,7 +62,6 @@ class Ingest extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'food' => 'Food',
 			'food_id' => 'Food',
             'user_id' => 'User',
             'hora' => 'Hora',
@@ -89,7 +88,6 @@ class Ingest extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('food',$this->food,true);
 		$criteria->compare('food_id',$this->food_id);
         $criteria->compare('user_id',$this->user_id);
         $criteria->compare('hora',$this->hora);
@@ -111,17 +109,17 @@ class Ingest extends CActiveRecord
 	}
 
     public function getkCal(){
-        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        $a = Food::model()->findAll("id='{$this->food_id}'");
         return $this->unidades * $a[0]->kCal;
     }
 
     public function getHidratos(){
-        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        $a = Food::model()->findAll("id='{$this->food_id}'");
         return $this->unidades * $a[0]->hidratos;
     }
 
     public function getGrasas(){
-        $a = Food::model()->findAll("Nombre='{$this->food}'");
+        $a = Food::model()->findAll("id='{$this->food_id}'");
         return $this->unidades * $a[0]->grasas;
     }
 }

@@ -4,6 +4,7 @@
 /* @var $comment Comment */
 /* @var $singest Sharedingest */
 /* @var $comments */
+/* @var $foodN String */
 
 $this->breadcrumbs=array(
 	'Ingests'=>array('index'),
@@ -24,13 +25,18 @@ $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'food',
+        array
+        (
+            'name'=>'food',
+            'type'=>'raw',
+            'value'=>$foodN,
+        ),
 		'unidades',
 		'hora',
         'kCal',
         'grasas',
-        'hidratos'
-	),
+        'hidratos',
+    ),
 ));
 ?>
 

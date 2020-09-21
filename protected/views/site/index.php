@@ -1,5 +1,6 @@
 <?php
 /* @var $this SiteController */
+Yii::app()->clientScript->registerCoreScript('jquery');
 
 $this->pageTitle=Yii::app()->name;
 ?>

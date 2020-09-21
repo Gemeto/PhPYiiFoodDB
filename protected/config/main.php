@@ -58,7 +58,7 @@ return array(
             'connectionString' => 'mysql:host=localhost;dbname=AlimentaDB',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'mysq13',
+            'password' => 'rufo4321',
             'charset' => 'utf8',
             'tablePrefix' => 'tbl_',
         ),
